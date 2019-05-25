@@ -53,3 +53,17 @@ footer.page-footer {
 	justify-content: center;
 	padding-top: 10%;
 }
+#index-banner .iddle {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+#index-banner .iddle .tabs {
+	
+	background: none;
+	
+	
+}
+#index-banner .iddle .tabs a {
+		color: white;
+	}
