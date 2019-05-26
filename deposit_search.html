@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Поиск вкладов - ПроЧеловека.РФ</title>
+
+  <!-- CSS  -->
+  <link href="css/materialIcons.css" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">ПроЧеловека.РФ</a>
+		<ul id="nav" class="right hide-on-med-and-down">
+        <!--<li><a href="#">Регистрация/Авторизация</a></li>-->
+		<li><a class="btn" href="deposit_search.html">Наследникам</a></li>
+		<li><a class="btn" href="searching_for_heirs.html">Фин. организациям</a></li>		
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>	  
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">      
+        <br><br>
+        <h1 class="header center search-deposite">Поиск вкладов</h1>
+        <div class="row center">
+        </div>
+        <br><br>		
+      </div>
+    </div>
+    <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block">
+            <h5>Введите данные наследника</h5>
+			<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12 l4 m6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Имя</label>
+        </div>
+        <div class="input-field col s12 l4 m6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Фамилия</label>
+        </div>
+		<div class="input-field col s12 l4">
+          <input id="patronomy" type="text" class="validate">
+          <label for="patronomy">Отчество</label>
+        </div>
+      </div>
+      <div class="row">
+		<div class="input-field col s12 l4">
+			<input id="datepicker" type="text" class="datepicker">
+			<label for="datepicker">Дата рождения</label>
+		</div>
+		<div class="input-field col s12 l8">
+          <input id="field" type="text" class="validate">
+          <label for="field">Место рождения</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+			<select id="gender">
+			  <option value="1">Мужской</option>
+			  <option value="2">Женский</option>
+			</select>
+			<label>Пол</label>
+		  </div>
+		  <div class="input-field col s6">
+			  <label>
+				<input type="checkbox" />
+				<span>Поиск вложения нотариусом</span>
+			  </label>
+		  </div>		  
+      </div>
+      <div class="row">
+        <div class="col s12">
+          Укажите ваш email
+          <div class="input-field inline">
+            <input id="email_inline" type="email" class="validate">
+            <label for="email_inline">Email</label>
+            <span id="validater-for-email" class="helper-text" data-error="некорректный email" data-success=""></span>
+          </div>
+        </div>
+      </div>
+	  <div class="row">
+		<div class="col s6 offset-s3">
+			<a onclick="Toast();" class="waves-effect waves-light btn" style="width: 100%;">Начать поиск</a>
+		</div>
+	  </div>
+    </form>
+  </div>		  
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  
+
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">ПроЧеловека.РФ</h5>
+          <p class="grey-text text-lighten-4"></p>
+
+
+        </div>
+        <!--
+        <div class="col l3 s12 offset-l3">
+          <h5 class="white-text">Ссылки</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Ссылка</a></li>
+
+          </ul>
+        </div>-->
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Сделано с помощью <a class="brown-text text-lighten-3" target="_blank" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

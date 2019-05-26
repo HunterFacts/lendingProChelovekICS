@@ -53,17 +53,10 @@ footer.page-footer {
 	justify-content: center;
 	padding-top: 10%;
 }
-#index-banner .iddle {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+.search-deposite {
+	padding-top: 6rem;
 }
-#index-banner .iddle .tabs {
-	
-	background: none;
-	
-	
+#h6-answer {
+	margin-bottom: 4rem;
+	margin-top: 1rem;
 }
-#index-banner .iddle .tabs a {
-		color: white;
-	}

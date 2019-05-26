@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Розыск Наследников - ПроЧеловека.РФ</title>
+  <title>Поиск наследников - ПроЧеловека.РФ</title>
 
   <!-- CSS  -->
   <link href="css/materialIcons.css" rel="stylesheet">
@@ -13,9 +13,11 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="./index.html" class="brand-logo">ПроЧеловека.РФ</a>
+      <a id="logo-container" href="index.html" class="brand-logo">ПроЧеловека.РФ</a>
 		<ul id="nav" class="right hide-on-med-and-down">
-        <li><a href="#">Регистрация/Авторизация</a></li>        
+        <!--<li><a href="#">Регистрация/Авторизация</a></li>-->
+		<li><a class="btn" href="deposit_search.html">Наследникам</a></li>
+		<li><a class="btn" href="searching_for_heirs.html">Фин. организациям</a></li>		
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -29,23 +31,12 @@
     <div class="section no-pad-bot">
       <div class="container">      
         <br><br>
-        <h1 class="header center">Заявка на поиск человека</h1>
+        <h1 class="header center search-deposite">Поиск наследников</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Чем больше данных Вы укажите, тем быстрее начнутся поиски!</h5>
         </div>
         <br><br>		
       </div>
     </div>
-	<div class="iddle">
-	  <div class="row" style="margin-bottom: 0;">
-		<div class="col s12">
-		  <ul class="tabs">
-			<li class="tab col s6 disabled"><a class="active" href="#personal-data"><h6>Личные данные</h6></a></li>
-			<li class="tab col s6 disabled"><a href="#search-data"><h6>Кого вы ищете?</h6></a></li>
-		  </ul>
-		</div>
-	  </div>
-	</div>
     <div class="parallax"><img src="background4.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
@@ -57,21 +48,46 @@
       <div class="row">
         <div class="col s12">
           <div class="icon-block">
-            <h5>Кто ищет?</h5>
+            <h5 id="h5-date-heirs">Введите данные о</h5>
+			<h6 id="h6-answer" class="center"></h6>
 			<div class="row">
-			<div class="col s6 l4">
-				<label>
-					<input name="group1" type="radio" checked />
-					<span>Я ищу этого человека сам</span>
-				</label>
-			</div>
-			<div class="col s6 l4">
-				<label>
-				<input name="group1" type="radio" />
-				<span>Я помогаю с поиском другому человеку</span>
-			  </label>
-			</div>
-			</div>			  
+			<form id="search" class="col s12">
+			  <div class="row">
+				<div class="file-field input-field col s12 l8">
+				  <div class="btn">
+					<span>Файл</span>
+					<input multiple type="file">
+				  </div>
+				  <div class="file-path-wrapper">
+					<input class="file-path validate" type="text">
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col s12">
+				  Укажите ваш email
+				  <div class="input-field inline">
+					<input id="email_inline" type="email" class="validate">
+					<label for="email_inline">Email</label>
+					<span id="validater-for-email" class="helper-text" data-error="некорректный email" data-success=""></span>
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col s6 offset-s3">
+					<a onclick="Search();" class="waves-effect waves-light btn" style="width: 100%;">Начать поиск</a>
+				</div>
+			  </div>			  
+			</form>
+			<div class="row">
+				<div class="col s5 offset-s1">
+					<a onclick="UndoSearch();" class="waves-effect waves-light btn btn-search" style="width: 100%; display: none;">Загрузить ещё данные для поиска</a>
+				</div>
+				<div class="col s5">
+					<a href="#" class="waves-effect waves-light btn btn-search" style="width: 100%; display: none;">Просмотреть результаты поиска</a>
+				</div>
+			  </div>
+		  </div>		  
           </div>
         </div>
       </div>
@@ -84,7 +100,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">Текст</h5>
+          <h5 class="header col s12 light"></h5>
         </div>
       </div>
     </div>
