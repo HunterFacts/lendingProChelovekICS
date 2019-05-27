@@ -81,6 +81,11 @@ footer.page-footer .row {
 		left: -64px;
 	}
 }
+@media (max-width: 350px){
+	nav .sidenav-trigger {
+		margin: 0;
+	}
+}
 @media (max-width: 600px) {
 	body .nav-wrapper #logo {
 		display: none;
