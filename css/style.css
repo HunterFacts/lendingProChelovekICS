@@ -3,6 +3,10 @@ nav .brand-logo {
   color: #444;
 }
 
+html {
+	font-family: Roboto;
+}
+
 p {
   line-height: 2rem;
 }
@@ -53,19 +57,16 @@ footer.page-footer {
 	justify-content: center;
 	padding-top: 10%;
 }
-.search-deposite {
-	padding-top: 6rem;
-}
+
 #h6-answer {
 	margin-bottom: 4rem;
 	margin-top: 1rem;
 }
 body .nav-wrapper #logo {
-	content: "1";
-	background-image: url("../img/logo.jpeg");
-	background-size: 56px;
+	background-image: url("../img/logo2.svg");
+	background-size: contain;
 	background-repeat: no-repeat;
-	width: 56px;
+	width: 259px;
 	height: 56px;
 	position: relative;
 	float: left;
@@ -79,15 +80,88 @@ footer.page-footer .row {
 	body .nav-wrapper #logo {
 		position: absolute;
 		left: -64px;
+		width: 222px;
+		height: 48px;
+		margin-top: 4px;
 	}
+}
+.icon-block {
+	background-color: white;
 }
 @media (max-width: 350px){
 	nav .sidenav-trigger {
 		margin: 0;
 	}
 }
-@media (max-width: 600px) {
-	body .nav-wrapper #logo {
-		display: none;
-	}
+body#index #index-banner{
+	min-height: 180px;
+}
+body#index {
+		background-image:url("../img/background2.svg");
+		background-size: 48px;
+		background-color: #009688;
+		background-repeat: space;
+}
+.people-block {
+	min-height: 450px;
+	padding-top: 2rem;	
+}
+.step-block {
+	min-height: 290px;
+	padding-top: 2rem;
+}
+.main-block {
+	padding: 2rem 1rem 2rem 2rem;
+}
+@media only screen and (min-width: 1500px){
+	.container {
+    width: 50%;
+	}	
+}
+@media only screen and (min-width: 1050px){
+	.container {
+    width: 70%;
+	}	
+}
+@media only screen and (min-width: 993px){
+	.container {
+    width: 80%;
+	}	
+}
+.color-yellow {
+	color: #FFD400;
+}
+nav .btn-nav {
+	background-color: #FFD400;
+	background-image: url("../img/btn1.svg");
+	background-size: 30px;
+	background-repeat: no-repeat;
+	padding-left: 48px;
+	background-position: 3px 3px;
+	color: black;
+}
+nav .btn-nav2 {
+	background-color: #FFD400;
+	background-image: url("../img/btn2.svg");
+	background-size: 30px;
+	background-repeat: no-repeat;
+	padding-left: 48px;
+	background-position: 3px 3px;
+	color: black;
+}
+nav .btn-nav:hover, nav .btn-nav2:hover {
+	background-color: ;
+}
+.search-deposite-div {
+	width: 100%;
+	height: 6rem;
+	background-color: #009688;
+	background-image:url("../img/background2.svg");
+		background-size: 48px;
+		background-color: #009688;
+		bottom: 0;
+		position: absolute;
+}
+.search-deposite {
+	padding-top: 0rem;
 }
