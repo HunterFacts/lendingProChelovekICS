@@ -7,9 +7,7 @@ html {
 	font-family: Roboto;
 }
 
-p {
-  line-height: 2rem;
-}
+
 
 .sidenav-trigger {
   color: #26a69a;
@@ -94,20 +92,22 @@ footer.page-footer .row {
 	}
 }
 body#index #index-banner{
-	min-height: 180px;
+	min-height: 100px;
+}
+body#index .parallax-container{
+	min-height: 150px;
 }
 body#index {
 		background-image:url("../img/background2.svg");
 		background-size: 48px;
 		background-color: #009688;
-		background-repeat: space;
 }
 .people-block {
-	min-height: 450px;
+	min-height: 500px;
 	padding-top: 2rem;	
 }
 .step-block {
-	min-height: 290px;
+	min-height: 350px;
 	padding-top: 2rem;
 }
 .main-block {
@@ -117,16 +117,32 @@ body#index {
 	.container {
     width: 50%;
 	}	
+	p {
+		font-size: 20px;
+	}
 }
-@media only screen and (min-width: 1050px){
+@media only screen and (min-width: 1050px) and (max-width:1500px){
 	.container {
     width: 70%;
+	
+	}
+	p {
+		font-size: 18px;
 	}	
+	.people-block {
+		min-height: 500px;	
+	}
 }
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 993px) and (max-width:1050px){
 	.container {
     width: 80%;
 	}	
+	p {
+		font-size: 16px;
+	}
+	.people-block {
+		min-height: 430px;	
+	}
 }
 .color-yellow {
 	color: #FFD400;
@@ -134,20 +150,24 @@ body#index {
 nav .btn-nav {
 	background-color: #FFD400;
 	background-image: url("../img/btn1.svg");
-	background-size: 30px;
+	background-size: 40px;
 	background-repeat: no-repeat;
-	padding-left: 48px;
-	background-position: 3px 3px;
+	padding-left: 56px;
+	background-position: 8px 8px;
 	color: black;
+	height: 56px;
+    line-height: 56px;
 }
 nav .btn-nav2 {
 	background-color: #FFD400;
 	background-image: url("../img/btn2.svg");
-	background-size: 30px;
+	background-size: 40px;
 	background-repeat: no-repeat;
-	padding-left: 48px;
-	background-position: 3px 3px;
+	padding-left: 56px;
+	background-position: 8px 8px;
 	color: black;
+	height: 56px;
+    line-height: 56px;
 }
 nav .btn-nav:hover, nav .btn-nav2:hover {
 	background-color: ;
@@ -164,4 +184,7 @@ nav .btn-nav:hover, nav .btn-nav2:hover {
 }
 .search-deposite {
 	padding-top: 0rem;
+}
+.no-margin-bottom {
+	margin-bottom: 0;
 }
