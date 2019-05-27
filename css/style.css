@@ -72,6 +72,9 @@ body .nav-wrapper #logo {
 	margin-top: 4px;
 	margin-right: 4px;
 }
+footer.page-footer .row {
+	margin-bottom: 0;
+}
 @media (max-width: 700px) {
 	body .nav-wrapper #logo {
 		position: absolute;
@@ -80,11 +83,6 @@ body .nav-wrapper #logo {
 }
 @media (max-width: 600px) {
 	body .nav-wrapper #logo {
-		background-size: 52px;
-		width: 52px;
-		height: 52px;
-		margin-top: 2px;
-		left: -56px;
-		
+		display: none;
 	}
 }
