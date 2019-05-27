@@ -60,3 +60,31 @@ footer.page-footer {
 	margin-bottom: 4rem;
 	margin-top: 1rem;
 }
+body .nav-wrapper #logo {
+	content: "1";
+	background-image: url("../img/logo.jpeg");
+	background-size: 56px;
+	background-repeat: no-repeat;
+	width: 56px;
+	height: 56px;
+	position: relative;
+	float: left;
+	margin-top: 4px;
+	margin-right: 4px;
+}
+@media (max-width: 700px) {
+	body .nav-wrapper #logo {
+		position: absolute;
+		left: -64px;
+	}
+}
+@media (max-width: 600px) {
+	body .nav-wrapper #logo {
+		background-size: 52px;
+		width: 52px;
+		height: 52px;
+		margin-top: 2px;
+		left: -56px;
+		
+	}
+}
