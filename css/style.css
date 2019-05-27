@@ -111,7 +111,10 @@ body#index {
 	padding-top: 2rem;
 }
 .main-block {
-	padding: 2rem 1rem 2rem 2rem;
+	padding: 1rem 1rem 1rem 2rem;
+}
+.main-block h3 {
+	margin-top: 0.50rem;
 }
 @media only screen and (min-width: 1500px){
 	.container {
@@ -157,6 +160,7 @@ nav .btn-nav {
 	color: black;
 	height: 56px;
     line-height: 56px;
+	font-weight:bold;
 }
 nav .btn-nav2 {
 	background-color: #FFD400;
@@ -168,6 +172,7 @@ nav .btn-nav2 {
 	color: black;
 	height: 56px;
     line-height: 56px;
+	font-weight:bold;
 }
 nav .btn-nav:hover, nav .btn-nav2:hover {
 	background-color: ;
